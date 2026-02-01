@@ -1,21 +1,23 @@
 # Car Rental Full Stack Web Application
 
 ## Overview
-A full-stack car rental web application that allows users to browse available cars, upload images, and manage bookings.  
-The application follows a client–server architecture with secure environment-based configuration.
+A full-stack car rental web application built using a client–server architecture.  
+The application allows users to browse available cars and supports image uploads using a third-party image service.  
+All sensitive configuration is handled securely using environment variables.
 
 ## Tech Stack
 - Frontend: JavaScript, Vite
 - Backend: Node.js, Express
-- Database: MongoDB (Atlas)
+- Database: MongoDB Atlas
 - Image Storage: ImageKit
 - Tools: Git, GitHub, VS Code
 
 ## Features
-- Client–server separation
-- Image upload using ImageKit
-- Environment-based configuration
-- Scalable folder structure
+- Client–server architecture
+- RESTful API using Express
+- Image upload and management with ImageKit
+- Secure environment-based configuration
+- Scalable and organized project structure
 
 ## Prerequisites
 - Node.js installed
@@ -25,20 +27,20 @@ The application follows a client–server architecture with secure environment-b
 ## Environment Setup
 
 ### Server (`/server`)
-Create a `.env` file inside the `server` folder and add:
+Create a `.env` file inside the `server` folder and add the following:
 
+```env
 MONGO_URI=your_mongodb_connection_string
 PUBLIC_KEY=your_imagekit_public_key
 PRIVATE_KEY=your_imagekit_private_key
 URL_ENDPOINT=your_imagekit_url_endpoint
 
-### Client (`/client`)
-No environment variables required.
+Client (/client)
 
-## How to Run Locally
+No environment variables are required for the client.
 
-### 1️⃣ Start the Server
-```bash
+How to Run Locally
+1️⃣ Start the Server
 cd server
 npm install
 npm run server
@@ -48,5 +50,5 @@ cd client
 npm install
 npm run dev
 
-The application will run locally once both server and client are active.
 
+Once both the server and client are running, the application will be available locally in your browser.
