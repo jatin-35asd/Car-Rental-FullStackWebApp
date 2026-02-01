@@ -27,3 +27,26 @@ The application follows a client–server architecture with secure environment-b
 ### Server (`/server`)
 Create a `.env` file inside the `server` folder and add:
 
+MONGO_URI=your_mongodb_connection_string
+PUBLIC_KEY=your_imagekit_public_key
+PRIVATE_KEY=your_imagekit_private_key
+URL_ENDPOINT=your_imagekit_url_endpoint
+
+### Client (`/client`)
+No environment variables required.
+
+## How to Run Locally
+
+### 1️⃣ Start the Server
+```bash
+cd server
+npm install
+npm run server
+
+### 2️⃣ Start the Client
+cd client
+npm install
+npm run dev
+
+The application will run locally once both server and client are active.
+
