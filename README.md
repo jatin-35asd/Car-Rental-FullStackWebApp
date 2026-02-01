@@ -43,7 +43,7 @@ cd server
 npm install
 npm run server
 
-### 2️⃣ Start the Client
+2️⃣ Start the Client
 cd client
 npm install
 npm run dev
